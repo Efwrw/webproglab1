@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>веб 1</title>
+            <script src="main.js" defer></script>
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <header class="report-header">
+                        <h1>Головской Дмитрий Викторович</h1>
+                        <p>Группа: P3215 | Вариант: 12726</p>
+                    </header>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <div class="plane">
+                        <canvas id="canvas-figure" width="500" height="500"></canvas>
+                        <canvas id="canvas-item" width="500" height="500"></canvas>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <form id="basic-form">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Введите значение в форму</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>X:</td>
+                                    <td>
+                                        <input type="radio" id="x-5" name="x" value="-5"/> <label for="x-5">-5</label>
+                                        <input type="radio" id="x-4" name="x" value="-4"/> <label for="x-4">-4</label>
+                                        <input type="radio" id="x-3" name="x" value="-3"/> <label for="x-3">-3</label>
+                                        <input type="radio" id="x-2" name="x" value="-2"/> <label for="x-2">-2</label>
+                                        <input type="radio" id="x-1" name="x" value="-1"/> <label for="x-1">-1</label>
+                                        <input type="radio" id="x0"  name="x" value="0"/>  <label for="x0">0</label>
+                                        <input type="radio" id="x1"  name="x" value="1"/>  <label for="x1">1</label>
+                                        <input type="radio" id="x2"  name="x" value="2"/>  <label for="x2">2</label>
+                                        <input type="radio" id="x3"  name="x" value="3"/>  <label for="x3">3</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Y:</td>
+                                    <td>
+                                        <input type="text" id="y-input" name="y" required placeholder="-5..5"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>R:</td>
+                                    <td>
+                                        <input type="radio" id="r1"   name="r" value="1"/>   <label for="r1">1</label>
+                                        <input type="radio" id="r1.5" name="r" value="1.5"/> <label for="r1.5">1.5</label>
+                                        <input type="radio" id="r2"   name="r" value="2"/>   <label for="r2">2</label>
+                                        <input type="radio" id="r2.5" name="r" value="2.5"/> <label for="r2.5">2.5</label>
+                                        <input type="radio" id="r3"   name="r" value="3"/>   <label for="r3">3</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <button type="submit">Отправить</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div id="error-msg" style="color: #c0392b; min-height: 1.2em;" role="alert"></div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" id="history-button">
+                    <form id="dummy-form">
+                        <button type="submit" >Сбросить историю</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="result-table">
+                        <thead>
+                            <tr>
+                                <th>X</th><th>Y</th><th>R</th><th>Время</th><th>Результат</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-body">
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
